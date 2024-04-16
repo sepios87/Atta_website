@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "eliliot";
+    font-weight: bold;
+    src: url("/elliot/elliotBold.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "eliliot";
+    font-weight: normal;
+    src: url("/elliot/elliotRegular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "eliliot";
+    font-weight: 100;
+    src: url("/elliot/elliotThin.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "eliliot";
+    font-weight: 200;
+    src: url("/elliot/elliotLight.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "eliliot";
+    font-weight: 900;
+    src: url("/elliot/elliotHeavy.otf") format("opentype");
+  }
+  

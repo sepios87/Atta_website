@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/src/style/reset.css" />
+  <link rel="stylesheet" href="/src/style/font.css" />
+  <title>Atta</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav class="nav">
+      <img src="/logo.png" height="20" alt="logo">
+      <div class="burger" id="burger-menu-btn" (click)="toggleMenu()">
+        <i class="burger__icon fa-solid fa-bars" id="burger-menu-icon"></i>
+      </div>
+      <ul class="nav__list nav-is-closed" id="menu">
+        <li class="nav__item"><a href="#app">Application</a></li>
+        <li class="nav__item"><a href="#about">A propos</a></li>
+        <li class="nav__item"><a href="#for-all">Pour tous</a></li>
+        <li class="nav__item"><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <section class="header__container">
+      <div class="header__title">
+        <h1 class="title">Votre application de réservation</h1>
+        <p class="subtitle">
+          Un lien privilégié entre le restaurateur et le consommateur avec avec le choix exact de votre place
+          à l’intérieur de votre restaurant, tout ca comme au cinéma !
+        </p>
+        <a href="#feature" class="button">C'est par ici <i class="button__icon fa-solid fa-chevron-right"></i></a>
+      </div>
+      <div class="header__img"></div>
+    </section>
+  </header>
+  <section class="download" id="app">
+    <div class="circle">
+      <img class="circle__img" src="/img/mockup-entier.png" alt="mockup de l'application sur un téléphone">
+    </div>
+    <div class="download__content">
+      <span class="label">Bientot</span>
+      <h2 class="download__title">Téléchargez l'application</h2>
+      <p class="download__text">
+        La révolution dans vos réservations : Réservez votre table directement depuis le plan de votre
+        restaurant
+        préféré. En manque d’inspiration ? Découvrez l’ensemble des restaurants partenaires, avis, photos ou
+        notes.
+        Repas de groupe, entre amis ? Pas de prises de tête au moment de payer !
+        Grâce à ATTA, partagez la note à tout moment !
+      </p>
+      <div class="app-container">
+        <a href="https://www.apple.com/fr/app-store/" class="download-app">
+          <i class="download-app__icon fa-brands fa-apple"></i>
+          <div>
+            Télécharger sur <span>l'App Store</span>
+          </div>
+        </a>
+        <a href="https://play.google.com/store/apps?hl=fr&gl=US" class="download-app">
+          <i class="download-app__icon fa-brands fa-google-play"></i>
+          <div>
+            Télécharger sur <span>Play Store</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+  <span class="divider"></span>
+  <section class="cards" id="feature">
+    <h2 class="cards__title">Nos fonctionnalités</h2>
+    <div class="cards__content">
+      <div class="card">
+        <div class="card__top">
+          <i class="card__icon fa-solid fa-utensils"></i>
+          <h3 class="card__title">Atta'ble</h3>
+        </div>
+        <p class="card__text">Réservez votre table en toute simplicité dans vos restaurants préférés à
+          proximité. Laissez-vous porter par une multitude de thèmes culinaires. Choisissez votre plat favori,
+          précommandez et profitez !</p>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <i class="card__icon fa-solid fa-burger"></i>
+          <h3 class="card__title">Atta'sauce</h3>
+        </div>
+        <p class="card__text">Personnalisez vos plats selon vos goûts et vos envies. Avec notre application
+          ATTA, ravissez vos papilles, vous êtes votre propre chef ! Notre équipe est disponible à votre
+          service.</p>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <i class="card__icon fa-solid fa-glass-cheers"></i>
+          <h3 class="card__title">Atta'santé</h3>
+        </div>
+        <p class="card__text">Venez entre amis ou en famille en évitant les prises de tête lors du passage en
+          caisse. Même plus besoin de se lever, vous pouvez payer chacun votre part depuis votre téléphone en
+          un clique. En laissant un pourboire, soutenez également vos serveurs !</p>
+      </div>
+      <div class="card">
+        <div class="card__top">
+          <i class="card__icon fa-solid fa-pizza-slice"></i>
+          <h3 class="card__title">Atta'disposition</h3>
+        </div>
+        <p class="card__text">Disponible à votre convenance, réservez la table de votre choix en fonction du
+          plan du restaurant mis à votre disposition. Choisissez la date et l’heure, car vous êtes le
+          décisionnaire. Au service du midi ou du soir, c’est vous la star.</p>
+      </div>
+    </div>
+  </section>
+  <span class="divider"></span>
+  <section class="profils" id="for-all">
+    <div class="profil">
+      <img class="profil__img" src="/img/gourmet.jpg" alt="photo d'un gourmet">
+      <h3 class="profil__title">Gourmets</h3>
+      <p class="profil__text">
+        Vous désirez partager un repas en famille ou entre amis dans les meilleures conditions ? Notre
+        application
+        ATTA vous facilite la vie grâce à ses nombreuses fonctionnalités. Recherchez, planifiez, dégustez en
+        toute
+        simplicité !
+      </p>
+    </div>
+    <div class="profil">
+      <img class="profil__img" src="/img/chef.jpg" alt="photo d'un chef">
+      <h3 class="profil__title">Restaurateurs</h3>
+      <p class="profil__text">
+        Vous souhaitez simplifier le travail de vos équipes et de votre restaurant ? Collaborez avec ATTA et
+        facilitez votre charge de travail au quotidien grâce à nos nombreuses fonctionnalités regroupées en une
+        application !
+      </p>
+    </div>
+  </section>
+  <span class="divider"></span>
+  <section class="about" id="about">
+    <img class="about__img" src="/img/illustration.jpg" alt="illustration d'une salle de resrtaurant">
+    <div class="about__container">
+      <h2 class="about__title">Qui sommes nous ?</h2>
+      <span class="about-divider"></span>
+      <p class="about__text">
+        Une start-up jeune et innovante basée dans la ville rose à Toulouse. Notre histoire assez spéciale
+        commence
+        sur les bancs de l’école. Sur un projet scolaire nos chemins se sont croisés et nous avons eu cette idée
+        qui
+        va rendre votre quotidien plus agréable. Pour répondre à un problème que nous avons pu rencontrer dans
+        le
+        passé, nous avons mis en place cette plateforme pour palier à ce problème. Notre vision très novatrice
+        et
+        ambitieuse, a pour but de répandre le plus possible cette nouvelle fonctionnalité qui saura améliorer
+        l’expérience pour les consommateurs comme pour les restaurateurs. Parce que votre satisfaction est notre
+        motivation, nous ne cessons jamais d’actualiser et d'améliorer notre projet suite à vos retours.
+      </p>
+    </div>
+  </section>
+  <span class="divider"></span>
+  <section class="form" id="contact">
+    <h2 class="form__title">Contactez nous</h2>
+    <form class="form__container" id="contact-form">
+      <input type="email" formControlName="email" placeholder="Email" type="email" id="email" required="true">
+      <textarea name="message" formControlName="message" placeholder="Message" rows="6" id="message"
+        required="true"></textarea>
+      <button type="submit">
+        <i class="form__icon fa-solid fa-paper-plane"></i>
+        <p>Envoyer</p>
+      </button>
+    </form>
+  </section>
+  <span class="divider"></span>
+  <footer class="footer">
+    <ul class="footer__legal">
+      <li>
+        <a href="/file/mentions_legales.pdf" target="_blank">
+          <i class="footer__icon fa-solid fa-carrot"></i>
+          Mentions légales
+        </a>
+      </li>
+      <li>
+        <a href="/file/cgu.pdf" target="_blank">
+          <i class="footer__icon fa-solid fa-carrot"></i>
+          CGU
+        </a>
+      </li>
+      <li>
+        <a href="/file/cgv.pdf" target="_blank">
+          <i class="footer__icon fa-solid fa-carrot"></i>
+          CGV
+        </a>
+      </li>
+    </ul>
+    <div class="footer__bottom">
+      <p class="footer__copiright">Tout droit réservé à ATTA (projet école)</p>
+      <ul class="socials">
+        <li><a href="https://www.instagram.com/?hl=fr">
+            <i class="socials__icon fa-brands fa-instagram"></i>
+          </a></li>
+        <li><a href="https://www.facebook.com/">
+            <i class="socials__icon fa-brands fa-facebook-f"></i>
+          </a></li>
+        <li><a href="https://twitter.com/?lang=fr">
+            <i class="socials__icon fa-brands fa-twitter"></i>
+          </a></li>
+        <li><a href="https://www.linkedin.com/">
+            <i class="socials__icon fa-brands fa-linkedin-in"></i>
+          </a></li>
+      </ul>
+    </div>
+  </footer>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
